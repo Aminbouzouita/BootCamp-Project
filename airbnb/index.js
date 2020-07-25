@@ -20,10 +20,10 @@ $(document).ready(function(){
     var minbedrooms=$("#minbedrooms").val().trim();
     var maxprice=$("#maxprice").val().trim();
     var minprice=$("#minprice").val().trim();
-    var entirehome="true";
-    var sharedroom="true";
-    var privateroom="true";
-    var hotelroom="true";
+    var entirehome=$("#entirehome").val().trim();
+    var sharedroom=$("#sharedroom").val().trim();
+    var privateroom=$("#privateroom").val().trim();
+    var hotelroom=$("#hotelroom").val().trim();
     var settings = {
         "async": true,
         "crossDomain": true,
