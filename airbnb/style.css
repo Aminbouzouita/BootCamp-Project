@@ -1,3 +1,13 @@
 body{
-    margin-left: 50px;
+    margin-left: 60px;
+}
+#requiredoption{
+    visibility: hidden;
+    color: red;
+}
+.currency{
+    margin-bottom: 30px;
+}
+.searchbtn{
+    margin-left: 180px;
 }

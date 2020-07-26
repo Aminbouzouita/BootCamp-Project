@@ -1,0 +1,43 @@
+body{
+    color: white;
+    background-image: url(../airplane.jpg);
+    background-repeat: no-repeat;
+    margin-left: 50px;
+    background-size: cover;
+}
+.navbar{
+    margin-top:30px ;
+    margin-bottom: 50px;
+}
+#logo{
+margin-left: 900px;
+}
+.requiredoptions{
+    visibility: hidden;
+    color: red;
+}
+.currency{
+    margin-bottom: 30px;
+}
+.searchbtn{
+    margin-left: 180px;
+}
+.airlines{
+    margin-bottom:50px ;
+}
+[type="date"] {
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+  }
+  [type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+  [type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+  .content{
+      color: black;
+    background-color: white;
+    opacity:70%;
+}
+  
+ 
