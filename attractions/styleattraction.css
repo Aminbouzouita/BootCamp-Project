@@ -1,0 +1,18 @@
+body{
+    background-image: url(../new\ york.jpg);
+    background-repeat: no-repeat;
+    margin-left: 50px;
+    background-size: cover;
+}
+.navbar{
+    margin-top:30px ;
+    margin-bottom: 50px;
+}
+#requiredoption{
+    visibility: hidden;
+    color: red;
+}
+
+.searchbtn{
+    margin-top: 50px;
+}
