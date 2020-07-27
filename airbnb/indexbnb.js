@@ -84,15 +84,16 @@ $(document).ready(function(){
        
         for(var k=0; k < numpriceitems ;k++){
         var pricedetails=response.listings[i].pricing_quote.price.price_items[k].localized_title;
-        
-       
         var priceinfo = response.listings[i].pricing_quote.price.price_items[k].localized_explanation;
         $(".content").append($("<p></p>").text(pricedetails+": "+priceinfo));
         console.log(pricedetails);
          
        }
+       $(".content").append($("<div></div>").addClass("carousel slide carousel-fade").attr("data-ride","carousel"));
+       $(".carousel slide carousel-fade").append($("<div></div>").addClass("carousel-inner"));
         for(var j=0 ;j < numpicture ;j++){
-        $(".content").append($("<img></img>").attr("src",response.listings[i].listing.contextual_pictures[j].picture).addClass("pictures"));
+        $(".carousel-inner").append($("<div></div>").addClass("carousel-item"));    
+        $(".carousel-item").append($("<img></img>").attr("src",response.listings[i].listing.contextual_pictures[j].picture).addClass("d-block w-100"));
         }
         }
     })

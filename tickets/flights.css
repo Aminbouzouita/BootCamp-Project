@@ -16,6 +16,10 @@ margin-left: 900px;
     visibility: hidden;
     color: red;
 }
+a:active{
+    color: aqua;
+
+}
 .currency{
     margin-bottom: 30px;
 }
@@ -35,7 +39,9 @@ margin-left: 900px;
     opacity: 0;
   }
   .content{
-      color: black;
+    margin-left: 300px;  
+    text-align: center;
+    color: black;
     background-color: white;
     opacity:70%;
 }
