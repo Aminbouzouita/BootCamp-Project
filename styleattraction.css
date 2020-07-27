@@ -1,5 +1,5 @@
 body{
-    background-image: url(../new\ york.jpg);
+    background-image: url(new\ york.jpg);
     background-repeat: no-repeat;
     margin-left: 50px;
     background-size: cover;
@@ -15,4 +15,9 @@ body{
 
 .searchbtn{
     margin-top: 50px;
+}
+.content{
+    color: white;  
+    text-align: center;
+    opacity:70%;
 }

@@ -1,6 +1,6 @@
+
 body{
-    color: white;
-    background-image: url(../airplane.jpg);
+    background-image: url(house.jpg);
     background-repeat: no-repeat;
     margin-left: 50px;
     background-size: cover;
@@ -9,22 +9,13 @@ body{
     margin-top:30px ;
     margin-bottom: 50px;
 }
-.checkbox{
-    margin-bottom: 20px;
-}
-.requiredoptions{
+#requiredoption{
     visibility: hidden;
     color: red;
 }
 
-.currency{
-    margin-bottom: 30px;
-}
 .searchbtn{
-    margin-left: 180px;
-}
-.airlines{
-    margin-bottom:50px ;
+    margin-top: 50px;
 }
 [type="date"] {
     background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
@@ -36,10 +27,10 @@ body{
     opacity: 0;
   }
   .content{
-    margin-left: 300px;  
-    text-align: center;
-    color: black;
-    background-color: white;
-    opacity:70%;
+      margin-left: 300px;
+      text-align: center;
+      background-color: white;
+      opacity:70%;
+  
 }
  

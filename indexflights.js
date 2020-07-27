@@ -8,9 +8,9 @@ var airports=[{value:"Birmingham International Airport", name:"BHM"},{value:"Dot
 		if($(this).attr("value","oneway").is(':checked')) {
 	    $(".returndate").attr("style","visibility:hidden");
 		}
-		// else if($(this).attr("value","multicity").is(':checked')){
-		  	
-		// }
+		else{
+			$(".returndate").attr("style","visibility:visible");
+		}
 	});
 	$("button").on("click",function(event){
 	event.preventDefault();
