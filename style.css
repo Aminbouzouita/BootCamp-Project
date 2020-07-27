@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(242, 235, 226);
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: url(https://www.surfertoday.com/images/stories/physical-world-map.jpg) 
+    
+}
+
+h1  {
+    font-size: 78px;
+    font-style: unset;
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: center;
+    color: white;   
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(12, 77, 85);
+  }
+  
+li {
+    float: left;
+  }
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+li a:hover:not(.active) {
+    background-color: rgb(37, 156, 134);
+  }
+  
+.active {
+    background-color: #edb179;
+  }
+
+h2  {
+    font-size: 48px;
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: center;
+    color: white;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
