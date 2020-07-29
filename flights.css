@@ -3,7 +3,8 @@ body{
     background-image: url(airplane.jpg);
     background-repeat: no-repeat;
     margin-left: 50px;
-    background-size: cover;
+    background-size: 1600px 745px;
+   
 }
 .navbar{
     margin-top:30px ;
@@ -36,6 +37,7 @@ body{
     opacity: 0;
   }
   .content{
+      margin-top: 185px;
     margin-left: 300px;  
     text-align: center;
     color: black;
