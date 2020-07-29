@@ -2,7 +2,8 @@ body{
     background-image: url(new\ york.jpg);
     background-repeat: no-repeat;
     margin-left: 50px;
-    background-size: cover;
+    margin-left: 50px;
+    background-size: 1600px 745px;
 }
 .navbar{
     margin-top:30px ;
@@ -17,7 +18,9 @@ body{
     margin-top: 50px;
 }
 .content{
-    color: white;  
+    margin-top: 293px;
+    background-color: white;
+    color: black; 
     text-align: center;
     opacity:70%;
 }

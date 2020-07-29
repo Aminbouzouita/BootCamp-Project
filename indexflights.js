@@ -66,7 +66,7 @@ var airports=[{value:"Birmingham International Airport", name:"BHM"},{value:"Dot
 	else{
         $("#currencymessage").attr("style","visibility:hidden");
        }
-	var language = $("language").val().trim();
+	var language = $("#language").val().trim();
 	var settings = {
 		"async": true,
 		"crossDomain": true,
@@ -86,7 +86,7 @@ var airports=[{value:"Birmingham International Airport", name:"BHM"},{value:"Dot
 	 for(var i=0;i < numairlaines;i++){
 	 var airlinename=response.Carriers[i].Name;
 	 var carriersid=response.Carriers[i].CarrierId;
-	 airlines.push(`name:${airlinename},value:${carriersid}`);
+	 airlines.push({name: airlinename,value: carriersid});
 	 console.log(airlines[i].name);
 	 }	
 	 var departairportcode=response.Places[0].IataCode;

@@ -3,7 +3,7 @@ body{
     background-image: url(house.jpg);
     background-repeat: no-repeat;
     margin-left: 50px;
-    background-size: cover;
+    background-size: 1600px 745px;
 }
 .navbar{
     margin-top:30px ;
@@ -27,10 +27,14 @@ body{
     opacity: 0;
   }
   .content{
+      margin-top: 35px;
       margin-left: 300px;
       text-align: center;
       background-color: white;
       opacity:70%;
   
+}
+.pictures{
+  max-width: 855px;
 }
  
