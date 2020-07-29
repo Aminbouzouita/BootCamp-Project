@@ -66,7 +66,7 @@ var airports=[{value:"Birmingham International Airport", name:"BHM"},{value:"Dot
 	else{
         $("#currencymessage").attr("style","visibility:hidden");
        }
-	var language = "en-US";
+	var language = $("language").val().trim();
 	var settings = {
 		"async": true,
 		"crossDomain": true,
@@ -91,7 +91,7 @@ var airports=[{value:"Birmingham International Airport", name:"BHM"},{value:"Dot
 	 }	
 	 var departairportcode=response.Places[0].IataCode;
 	 var destinationairportcode=response.Places[1].IataCode;
-	 console.log(destinationairportcode);
+	
 	 var currency=response.Currencies[0].Symbol;
 	 var numquotes=response.Quotes.length;
 	
@@ -101,12 +101,12 @@ var airports=[{value:"Birmingham International Airport", name:"BHM"},{value:"Dot
 	$(".content").append($("<p></p>").text("Arrival Airport: "+response.Places[1].Name)).addClass("arrivalairport");
 	 var carrierid=response.Quotes[j].OutboundLeg.CarrierIds[0];
 	 console.log(carrierid);
-	//  for (var k=0 ; k < numairlaines; k++){
-	//  if(airlines[k].value === carrierid){
-	//  var carriername = airlines[k].name;
-	//   console.log(carriername);
-	//  } }
-	//  $(".content").append($("<p></p>").text("Airline: "+ carriername)).addClass("airline");
+	 for (var k=0 ; k < numairlaines; k++){
+	 if(airlines[k].value === carrierid){
+	 var carriername = airlines[k].name;
+	  console.log(carriername);
+	 } }
+	 $(".content").append($("<p></p>").text("Airline: "+ carriername)).addClass("airline");
 	 var price=response.Quotes[j].MinPrice;
 	 $(".content").append($("<p></p>").text("Price: "+currency+" "+price)).addClass("price");
 	 var direct=response.Quotes[j].Direct; 

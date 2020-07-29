@@ -38,7 +38,7 @@ $.ajax({
         var responselength=response.data.length;
         for(var i=0 ;i < responselength ;i++){
             $(".content").append($("<p></p>").text("Attraction place: "+response.data[i].name)); 
-            $(".content").append($("<p></p>").text("distance from city: "+response.data[i].distance));
+            $(".content").append($("<p></p>").text("distance from city: "+parseFloat(response.data[i].distance).toFixed(1)));
             $(".content").append($("<p></p>").text("Street: "+response.data[i].address_obj.street1));  
             $(".content").append($("<img></img>").attr("src",response.data[i].photo.images.large.url).addClass("pictures"));
          }

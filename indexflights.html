@@ -59,17 +59,23 @@
               <label for="destinationairport">Destination Airport</label>
               <input type="text" class="pure-u-2-5" id="destination" placeholder="airport,city" />
               <span class="pure-form-message requiredoptions" id="desairportmessage">This is a required field.</span>
-
             </div>
-           
-            
-              
-            <div class="pure-u-1-2"> 
+            <div class="pure-u-1-4 currency">
+              <label for="language">Language</label> 
+              <select id="language" >
+                 <option>en-US</option>
+                 <option>fr</option> 
+                 <option>zh-hk</option>
+              </select>
+            </div>
+            <div class="pure-u-1-4"> 
               <label for="stacked-state">Currency</label>
-              <select id="currency">
+              <select id="currency" >
                 <option>USD</option>
                 <option>EUR</option>
+                <option>CNY</option>
               </select>
+            </div>
               <span class="pure-form-message requiredoptions" id="currencymessage">This is a required field.</span>
             </div>
             <div class="pure-u-1">   
